@@ -7,8 +7,5 @@ release:
     - npm start -p $PORT
 run:
   web: npm start -p $PORT
-  worker:
-    command:
-      yarn start
-    image: web
+  worker: yarn start
   
