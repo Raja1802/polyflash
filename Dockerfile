@@ -11,11 +11,11 @@ RUN apt-get update -qq && apt-get install -y yarn
 
 COPY .yarn tsconfig.json .yarnrc.yml /
 RUN yarn install
-COPY . ./
+COPY . .
 RUN yarn build
 #EXPOSE $PORT
 #CMD [ "node", "dist/index.js" ] -p $PORT
 
-#CMD ["npm", "run", "start"] --port $PORT
+CMD ["npm", "run", "start"] -p $PORT
 #CMD yarn start
 USER node
