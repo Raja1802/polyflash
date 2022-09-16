@@ -17,6 +17,12 @@ import { flashloanTable, priceTable } from "./consoleUI/table";
 import * as log4js from "log4js";
 import { findOpp } from "./findOpp";
 
+const express = require("express");
+const app = express();
+app.listen(process.env.PORT || 3000, () => {
+  console.log("Listen on the port 3000...");
+});
+
 log4js.configure({
   appenders: {
     flashloan: { type: "file", filename: "log/flashloan.log" },
