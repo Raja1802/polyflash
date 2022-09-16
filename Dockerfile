@@ -13,9 +13,9 @@ COPY .yarn tsconfig.json .yarnrc.yml /
 RUN yarn install
 COPY . ./
 RUN yarn build
-EXPOSE $PORT
+#EXPOSE $PORT
 #CMD [ "node", "dist/index.js" ] -p $PORT
 
 #CMD ["npm", "run", "start"] --port $PORT
-CMD yarn start
+#CMD yarn start
 USER node
