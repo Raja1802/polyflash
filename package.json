@@ -17,7 +17,7 @@
   "devDependencies": {
     "@types/jest": "latest",
     "@uniswap/sdk-core": "^3.0.1",
-    "@uniswap/v3-sdk": "^3.8.1",
+    "@uniswap/v3-sdk": "^3.9.0",
     "husky": "latest",
     "jest": "latest",
     "lint-staged": "latest",
@@ -29,6 +29,7 @@
   "dependencies": {
     "@openzeppelin/contracts": "latest",
     "@types/node": "latest",
+    "@uniswap/v3-periphery": "^1.4.2",
     "axios": "latest",
     "console-table-printer": "latest",
     "dotenv": "latest",

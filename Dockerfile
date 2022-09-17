@@ -11,8 +11,8 @@ RUN apt-get update -qq && apt-get install -y yarn
 
 COPY .yarn tsconfig.json .yarnrc.yml /
 RUN yarn install
-COPY . .
-RUN yarn build
+COPY . ./
+#RUN yarn build
 #EXPOSE $PORT
 #CMD [ "node", "dist/index.js" ] -p $PORT
 
